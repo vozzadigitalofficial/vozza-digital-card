@@ -1,0 +1,6 @@
+# robots.txt for Vozza Digital
+User-agent: *
+Allow: /
+
+# Link ke Sitemap jika nanti Mas membuatnya
+# Sitemap: https://vozzadigitalofficial.github.io/sitemap.xml

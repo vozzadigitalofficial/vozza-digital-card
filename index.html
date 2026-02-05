@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vozza Digital | Fathurozi</title>
+    
+    <meta name="description" content="Vozza Digital - Solusi digital presisi tinggi oleh Fathurozi. Architecting the Future.">
+    <meta name="author" content="Fathurozi">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-dark: #0d1117;
+            --card-bg: #161b22;
+            --accent-gold: #c9a227;
+            --text-main: #f0f6fc;
+            --text-dim: #8b949e;
+            --wa-color: #25d366;
+            --email-color: #ea4335;
+            --btn-bg: #21262d;
+            --btn-hover: #30363d;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Card Container */
+        .card-container {
+            background-color: var(--card-bg);
+            width: 100%;
+            max-width: 380px;
+            padding: 40px 30px;
+            border-radius: 24px;
+            border: 1px solid #30363d;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Logo & Header */
+        .logo-wrapper {
+            margin-bottom: 15px;
+        }
+
+        .logo {
+            width: 90px;
+            height: auto;
+            filter: drop-shadow(0 0 10px rgba(201, 162, 39, 0.3));
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 0.75rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        /* Profil */
+        .profile {
+            margin-bottom: 30px;
+        }
+
+        .profile h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .role {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        /* Buttons */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: var(--text-main);
+            padding: 14px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: 0.3s ease;
+            background-color: var(--btn-bg);
+            border: 1px solid #30363d;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            background-color: var(--btn-hover);
+            border-color: var(--accent-gold);
+        }
+
+        .btn-wa { border-left: 4px solid var(--wa-color); }
+        .btn-email { border-left: 4px solid var(--email-color); }
+
+        .btn-vcf {
+            background-color: var(--accent-gold);
+            color: #000;
+            border: none;
+        }
+
+        .btn-vcf:hover {
+            background-color: #e0b42a;
+            color: #000;
+        }
+
+        /* About Section */
+        .about {
+            text-align: left;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        .about h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: var(--accent-gold);
+        }
+
+        .about p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: var(--text-dim);
+        }
+
+        /* Footer */
+        .footer {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+        }
+
+        .signature {
+            color: var(--accent-gold);
+            margin-top: 5px;
+            font-weight: 600;
+        }
+
+        .dev-tag {
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.7rem;
+            opacity: 0.5;
+        }
+
+        /* Responsive */
+        @media (max-width: 400px) {
+            .card-container { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <header class="header">
+            <div class="logo-wrapper">
+                <img src="logo.png" alt="Vozza Digital Logo" class="logo">
+            </div>
+            <h1>VOZZA DIGITAL</h1>
+            <p class="tagline">Architecting the Future</p>
+        </header>
+
+        <section class="profile">
+            <h2>Fathurozi</h2>
+            <p class="role">Founder & Lead Programmer</p>
+        </section>
+
+        <section class="links">
+            <a href="https://wa.me/6285800234396" class="btn btn-wa" target="_blank">
+                <i class="fab fa-whatsapp"></i> Konsultasi Proyek
+            </a>
+            <a href="mailto:vozzadigital.official@gmail.com" class="btn btn-email">
+                <i class="fas fa-envelope"></i> Email Kami
+            </a>
+            <a href="https://github.com/vozzadigitalofficial" class="btn btn-portfolio" target="_blank">
+                <i class="fab fa-github"></i> Portofolio Eksklusif
+            </a>
+            <a href="fathurozi_vozzadigital.vcf" download class="btn btn-vcf">
+                <i class="fas fa-user-plus"></i> Simpan Kontak Digital
+            </a>
+        </section>
+
+        <article class="about">
+            <h3>Tentang Kami</h3>
+            <p>Kami menciptakan solusi digital dengan presisi tinggi. Berfokus pada inovasi dan fungsionalitas untuk membantu bisnis Anda melangkah lebih jauh.</p>
+        </article>
+
+        <footer class="footer">
+            <p>&copy; 2026 **Vozza Digital**. All Rights Reserved.</p>
+            <p class="signature">High Standards. No Compromise.</p>
+            <div class="dev-tag">Built with precision by @vozzadigitalofficial</div>
+        </footer>
+    </div>
+
+</body>
+</html>
