@@ -7,17 +7,18 @@
     
     <meta name="description" content="Vozza Digital - Solusi digital presisi tinggi oleh Fathurozi. Architecting the Future.">
     <meta name="author" content="Fathurozi">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vozzadigitalofficial.github.io/vozza-digital-card/">
+    <meta property="og:title" content="Vozza Digital | Fathurozi">
+    <meta property="og:description" content="Kartu Nama Digital Premium. High Standards. No Compromise. Simpan kontak saya sekarang.">
+    <meta property="og:image" content="https://vozzadigitalofficial.github.io/vozza-digital-card/logo.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         /* Reset & Base */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
             --bg-dark: #0d1117;
@@ -61,54 +62,23 @@
         }
 
         /* Logo & Header */
-        .logo-wrapper {
-            margin-bottom: 15px;
-        }
-
         .logo {
             width: 90px;
             height: auto;
+            margin-bottom: 15px;
             filter: drop-shadow(0 0 10px rgba(201, 162, 39, 0.3));
         }
 
-        h1 {
-            font-size: 1.5rem;
-            letter-spacing: 3px;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .tagline {
-            font-size: 0.75rem;
-            color: var(--accent-gold);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 30px;
-        }
+        h1 { font-size: 1.5rem; letter-spacing: 3px; font-weight: 700; margin-bottom: 5px; }
+        .tagline { font-size: 0.75rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; }
 
         /* Profil */
-        .profile {
-            margin-bottom: 30px;
-        }
-
-        .profile h2 {
-            font-size: 1.8rem;
-            font-weight: 600;
-        }
-
-        .role {
-            color: var(--text-dim);
-            font-size: 0.9rem;
-        }
+        .profile { margin-bottom: 30px; }
+        .profile h2 { font-size: 1.8rem; font-weight: 600; }
+        .role { color: var(--text-dim); font-size: 0.9rem; }
 
         /* Buttons */
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 35px;
-        }
-
+        .links { display: flex; flex-direction: column; gap: 12px; margin-bottom: 35px; }
         .btn {
             text-decoration: none;
             color: var(--text-main);
@@ -124,80 +94,27 @@
             background-color: var(--btn-bg);
             border: 1px solid #30363d;
         }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            background-color: var(--btn-hover);
-            border-color: var(--accent-gold);
-        }
-
+        .btn:hover { transform: translateY(-2px); background-color: var(--btn-hover); border-color: var(--accent-gold); }
         .btn-wa { border-left: 4px solid var(--wa-color); }
         .btn-email { border-left: 4px solid var(--email-color); }
+        .btn-vcf { background-color: var(--accent-gold); color: #000; border: none; }
+        .btn-vcf:hover { background-color: #e0b42a; color: #000; }
 
-        .btn-vcf {
-            background-color: var(--accent-gold);
-            color: #000;
-            border: none;
-        }
-
-        .btn-vcf:hover {
-            background-color: #e0b42a;
-            color: #000;
-        }
-
-        /* About Section */
-        .about {
-            text-align: left;
-            background: rgba(255, 255, 255, 0.03);
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-        }
-
-        .about h3 {
-            font-size: 1rem;
-            margin-bottom: 8px;
-            color: var(--accent-gold);
-        }
-
-        .about p {
-            font-size: 0.85rem;
-            line-height: 1.6;
-            color: var(--text-dim);
-        }
+        /* QR Section */
+        .qr-section { margin-top: 20px; padding: 15px; background: rgba(255, 255, 255, 0.05); border-radius: 12px; }
+        .qr-section p { font-size: 0.7rem; color: var(--accent-gold); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        .qr-code { width: 120px; height: 120px; border: 3px solid var(--accent-gold); border-radius: 8px; padding: 5px; background: white; }
 
         /* Footer */
-        .footer {
-            font-size: 0.75rem;
-            color: var(--text-dim);
-        }
-
-        .signature {
-            color: var(--accent-gold);
-            margin-top: 5px;
-            font-weight: 600;
-        }
-
-        .dev-tag {
-            margin-top: 20px;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 0.7rem;
-            opacity: 0.5;
-        }
-
-        /* Responsive */
-        @media (max-width: 400px) {
-            .card-container { padding: 30px 20px; }
-        }
+        .footer { font-size: 0.75rem; color: var(--text-dim); margin-top: 30px; }
+        .signature { color: var(--accent-gold); margin-top: 5px; font-weight: 600; }
     </style>
 </head>
 <body>
 
     <div class="card-container">
-        <header class="header">
-            <div class="logo-wrapper">
-                <img src="logo.png" alt="Vozza Digital Logo" class="logo">
-            </div>
+        <header>
+            <img src="logo.png" alt="Vozza Digital Logo" class="logo">
             <h1>VOZZA DIGITAL</h1>
             <p class="tagline">Architecting the Future</p>
         </header>
@@ -222,15 +139,14 @@
             </a>
         </section>
 
-        <article class="about">
-            <h3>Tentang Kami</h3>
-            <p>Kami menciptakan solusi digital dengan presisi tinggi. Berfokus pada inovasi dan fungsionalitas untuk membantu bisnis Anda melangkah lebih jauh.</p>
-        </article>
+        <section class="qr-section">
+            <p>Scan to Share</p>
+            <img src="qrcode.png" alt="QR Code" class="qr-code">
+        </section>
 
         <footer class="footer">
             <p>&copy; 2026 **Vozza Digital**. All Rights Reserved.</p>
             <p class="signature">High Standards. No Compromise.</p>
-            <div class="dev-tag">Built with precision by @vozzadigitalofficial</div>
         </footer>
     </div>
 
